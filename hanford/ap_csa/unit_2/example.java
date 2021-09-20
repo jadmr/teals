@@ -18,6 +18,10 @@ class NumAdder {
     public void printNumber() {
         System.out.println(number);
     }
+
+    public static void printStaticNumber(){
+        System.out.println(staticNumber);
+    }
 }
 
 class Startpoint {
@@ -36,6 +40,7 @@ class Startpoint {
          firstInstance.printNumber();
          secondInstance.printNumber();
 
-         System.out.println("static variable: " + NumAdder.staticNumber);
+         System.out.print("static variable: ");
+         NumAdder.printStaticNumber();
     }
 }

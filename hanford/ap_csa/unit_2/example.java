@@ -1,9 +1,12 @@
 class NumAdder {
     // Behavior? Or Attribute?
     int number;
+    static int staticNumber;
 
     public NumAdder() {
         this.number = 0;
+
+        staticNumber++;
     }
 
     // Behavior? Or Attribute?
@@ -32,5 +35,7 @@ class Startpoint {
 
          firstInstance.printNumber();
          secondInstance.printNumber();
+
+         System.out.println("static variable: " + NumAdder.staticNumber);
     }
 }

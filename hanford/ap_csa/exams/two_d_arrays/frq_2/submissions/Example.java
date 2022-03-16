@@ -1,4 +1,4 @@
-package students;
+package submissions;
 
 import answer.Answer;
 

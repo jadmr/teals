@@ -1,5 +1,5 @@
 JAVAC=javac
-sources = $(wildcard ./*.java ./answer/*.java ./students/*.java ./grading/*.java)
+sources = $(wildcard ./*.java ./answer/*.java ./students/*.java ./submissions/*.java ./grading/*.java)
 classes = $(sources:.java=.class)
 main = Problem
 
@@ -12,6 +12,7 @@ clean:
 	rm -f ./students/*.class
 	rm -f ./answer/*.class
 	rm -f ./grading/*.class
+	rm -f ./submissions/*.class
 
 %.class: %.java
 	$(JAVAC) $<

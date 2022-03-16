@@ -16,6 +16,7 @@ public class Students {
         this.studentNames.put(-3, "Addition Error Example");
         this.studentNames.put(-4, "Incorrect Handling of Diff Number of Rows and Columns Example");
         this.studentNames.put(-5, "Incorrect Handling of Adding Zero Example");
+        this.studentNames.put(-6, "Did Not Compile Example");
 
         // DO NOT push a commit listing student names
 

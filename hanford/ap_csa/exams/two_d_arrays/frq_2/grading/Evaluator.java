@@ -15,8 +15,11 @@ public abstract class Evaluator {
         };
 
         if (answer.getDidCompile() == false) {
-            score.decrementGradeAsPercentage(15);
-            score.addError("Answer did not compile", 15);
+            // Don't penalize multiple times
+            if (!score.getErrors().containsKey("Answer did not compile")) {
+                score.decrementGradeAsPercentage(15);
+                score.addError("Answer did not compile", 15);
+            }
         }
 
         try {

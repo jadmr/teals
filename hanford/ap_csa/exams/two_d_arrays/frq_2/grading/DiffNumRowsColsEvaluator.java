@@ -16,7 +16,7 @@ public class DiffNumRowsColsEvaluator extends Evaluator {
         boolean didNotAddCorrectly = false;
 
         for (int row = 0; row < pixels.length; row++) {
-            for (int col = 0; col < pixels.length; col++) {
+            for (int col = 0; col < pixels[0].length; col++) {
                 if (pixels[row][col] != 110) {
                     didNotAddCorrectly = true;
                 }

@@ -57,6 +57,7 @@ public class Problem {
         submissions.add(new submissions.AdditionErrorExample());
         submissions.add(new submissions.IncorrectHandlingNumRowsAndColsError());
         submissions.add(new submissions.IncorrectAddingZeroError());
+        submissions.add(new submissions.DidNotCompileExample());
 
         // Add student submissions
 

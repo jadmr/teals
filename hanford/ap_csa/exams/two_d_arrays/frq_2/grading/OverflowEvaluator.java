@@ -6,7 +6,12 @@ public class OverflowEvaluator extends Evaluator {
 
     @Override
     protected void EvaluateAnswer(Answer answer, Score score) {
-        answer.brighten(this.pixels, 1000);
+        this.pixels = new int[][] {
+            {255, 255},
+            {255, 255}
+        };
+
+        answer.brighten(this.pixels, 1);
 
         boolean didOverflow = false;
 
@@ -20,7 +25,7 @@ public class OverflowEvaluator extends Evaluator {
 
         if (didOverflow) {
             score.decrementGradeAsPercentage(10);
-            score.addError("pixel values exceeded 255 when adding 1000", 10);
+            score.addError("pixel values exceeded 255 when adding 1 to 255", 10);
         }
     }
 }

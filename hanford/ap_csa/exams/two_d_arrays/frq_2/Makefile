@@ -13,6 +13,7 @@ clean:
 	rm -f ./answer/*.class
 	rm -f ./grading/*.class
 	rm -f ./submissions/*.class
+	rm ./scores.csv
 
 %.class: %.java
 	$(JAVAC) $<

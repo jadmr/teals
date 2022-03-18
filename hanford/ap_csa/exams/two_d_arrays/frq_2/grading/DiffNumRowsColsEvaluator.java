@@ -14,10 +14,11 @@ public class DiffNumRowsColsEvaluator extends Evaluator {
         answer.brighten(this.pixels, 10);
 
         boolean didNotAddCorrectly = false;
+        var firstValue = pixels[0][0];
 
         for (int row = 0; row < pixels.length; row++) {
             for (int col = 0; col < pixels[0].length; col++) {
-                if (pixels[row][col] != 110) {
+                if (pixels[row][col] != firstValue) {
                     didNotAddCorrectly = true;
                 }
             }

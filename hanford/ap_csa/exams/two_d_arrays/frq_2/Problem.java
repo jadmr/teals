@@ -62,6 +62,35 @@ public class Problem {
         */
 
         // Add student submissions
+        submissions.add(new submissions.Submission00());
+        submissions.add(new submissions.Submission01());
+        submissions.add(new submissions.Submission02());
+        submissions.add(new submissions.Submission03());
+        submissions.add(new submissions.Submission04());
+        submissions.add(new submissions.Submission05());
+        submissions.add(new submissions.Submission06());
+        submissions.add(new submissions.Submission07());
+        submissions.add(new submissions.Submission08());
+        submissions.add(new submissions.Submission09());
+        submissions.add(new submissions.Submission10());
+        submissions.add(new submissions.Submission11());
+        submissions.add(new submissions.Submission12());
+        submissions.add(new submissions.Submission13());
+        submissions.add(new submissions.Submission14());
+        submissions.add(new submissions.Submission15());
+        submissions.add(new submissions.Submission16());
+        submissions.add(new submissions.Submission17());
+        submissions.add(new submissions.Submission18());
+        submissions.add(new submissions.Submission19());
+        submissions.add(new submissions.Submission20());
+        submissions.add(new submissions.Submission21());
+        submissions.add(new submissions.Submission22());
+        submissions.add(new submissions.Submission23());
+        submissions.add(new submissions.Submission24());
+        submissions.add(new submissions.Submission26());
+        submissions.add(new submissions.Submission28());
+        submissions.add(new submissions.Submission29());
+        submissions.add(new submissions.Submission32());
 
         return submissions;
     }

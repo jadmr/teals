@@ -52,12 +52,14 @@ public class Problem {
         var submissions = new ArrayList<Answer>();
 
         // Add samples
+        /*
         submissions.add(new submissions.NoErrorsExample());
         submissions.add(new submissions.OverflowErrorExample());
         submissions.add(new submissions.AdditionErrorExample());
         submissions.add(new submissions.IncorrectHandlingNumRowsAndColsError());
         submissions.add(new submissions.IncorrectAddingZeroError());
         submissions.add(new submissions.DidNotCompileExample());
+        */
 
         // Add student submissions
 

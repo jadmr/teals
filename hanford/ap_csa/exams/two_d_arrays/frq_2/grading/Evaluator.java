@@ -26,8 +26,11 @@ public abstract class Evaluator {
             this.EvaluateAnswer(answer, score);
         }
         catch (Exception e) {
-            score.decrementGradeAsPercentage(25);
-            score.addError("Answer threw exception", 25);
+            // Don't penalize multiple times
+            if (!score.getErrors().containsKey("Answer threw exception")) {
+                score.decrementGradeAsPercentage(35);
+                score.addError("Answer threw exception", 35);
+            }
         }
     }
 

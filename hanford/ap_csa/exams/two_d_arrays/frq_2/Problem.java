@@ -116,7 +116,8 @@ public class Problem {
                 sb.append(',');
 
                 // Write score
-                sb.append(score.getGradeAsPercentage());
+                var grade = score.getGradeAsPercentage() < 0 ? 0 : score.getGradeAsPercentage();
+                sb.append(grade);
                 sb.append(',');
 
                 // Write errors (if any)

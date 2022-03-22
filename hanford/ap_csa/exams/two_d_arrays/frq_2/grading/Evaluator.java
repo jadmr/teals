@@ -22,6 +22,14 @@ public abstract class Evaluator {
             }
         }
 
+        if (answer.getDidAttemptAnswer() == false) {
+            // Don't penalize multiple times
+            if (!score.getErrors().containsKey("Answer was not attempted")) {
+                score.decrementGradeAsPercentage(35);
+                score.addError("Answer was not attempted", 35);
+            }
+        }
+
         try {
             this.EvaluateAnswer(answer, score);
         }

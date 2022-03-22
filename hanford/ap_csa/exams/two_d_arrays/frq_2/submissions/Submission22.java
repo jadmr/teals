@@ -7,6 +7,7 @@ public class Submission22 extends Answer{
     public Submission22() {
         super(22);
         flagAnswerAsDidNotCompile();
+        flagAnswerAsNotAttempted();
     }
 
     @Override
